@@ -1,0 +1,6 @@
+body { margin:0; font-family:system-ui, sans-serif; background:#111; color:#eee; }
+.hero { background:url('../img/hero.jpg') center/cover; height:80vh; display:flex; align-items:center; justify-content:center; flex-direction:column; text-align:center; }
+h1 { font-size:3rem; margin:0; }
+.btn { background:#ff4500; color:#fff; padding:.75rem 1.5rem; border-radius:4px; text-decoration:none; }
+table { width:100%; border-collapse:collapse; margin-top:1rem; }
+th, td { padding:.5rem; border:1px solid #444; }
