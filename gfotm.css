@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap');
+
 @font-face {
     font-family: "Aporrheton";
     src: url("Aporrheton_font.ttf") format("truetype");
@@ -39,6 +41,42 @@
   
   .top-menu a:hover {
     opacity: 0.7;
+  }
+
+  .menu-dropdown {
+    display: inline-block;
+    position: relative;
+    margin: 0 1.5rem;
+  }
+
+  .menu-dropdown-toggle {
+    margin: 0;
+  }
+
+  .menu-dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 10rem;
+    margin-top: 0.75rem;
+    padding: 0.5rem 0;
+    background: #000000;
+    border: 1px solid #ffffff;
+    text-align: center;
+    z-index: 1001;
+  }
+
+  .menu-dropdown-menu a {
+    display: block;
+    margin: 0;
+    padding: 0.5rem 1rem;
+  }
+
+  .menu-dropdown:hover .menu-dropdown-menu,
+  .menu-dropdown:focus-within .menu-dropdown-menu {
+    display: block;
   }
   
   /* Main heading uses your custom font */
