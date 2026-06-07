@@ -23,6 +23,7 @@
     right: 0;
     width: 100%;
     background: #000000;
+    border: none;
     padding: 1rem 0;
     text-align: center;
     z-index: 1000;
@@ -48,6 +49,16 @@
     margin: 0 1.5rem;
   }
 
+  /* Invisible bridge so the menu stays open while moving the cursor down */
+  .menu-dropdown::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: -2rem;
+    right: -2rem;
+    height: 1rem;
+  }
+
   .menu-dropdown-toggle {
     margin: 0;
   }
@@ -55,14 +66,13 @@
   .menu-dropdown-menu {
     display: none;
     position: absolute;
-    top: 100%;
+    top: calc(100% + 0.5rem);
     left: 50%;
     transform: translateX(-50%);
     min-width: 10rem;
-    margin-top: 0.75rem;
     padding: 0.5rem 0;
     background: #000000;
-    border: 1px solid #ffffff;
+    border: none;
     text-align: center;
     z-index: 1001;
   }
