@@ -114,14 +114,15 @@
   }
 
   #mc_embed_signup input.button {
-    background: transparent;
+    background: #ff9adf;
     border: 1px solid #ff9adf;
     border-radius: 0;
-    color: #ff9adf;
+    color: #000000;
     cursor: pointer;
     font-family: "Cinzel", "Times New Roman", serif;
     font-size: 0.875rem;
     padding: 0.5rem 1rem;
+    text-align: center;
     text-transform: lowercase;
     transition: opacity 0.3s;
   }
