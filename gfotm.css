@@ -53,6 +53,98 @@
     z-index: 1000;
   }
 
+  .newsletter-signup {
+    margin-bottom: 1.25rem;
+  }
+
+  #mc_embed_signup {
+    background: transparent !important;
+    clear: none;
+    font-family: "Cinzel", "Times New Roman", serif;
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  #mc_embed_signup h2 {
+    color: #ff9adf;
+    font-family: "Cinzel", "Times New Roman", serif;
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: lowercase;
+    margin: 0 0 0.75rem;
+  }
+
+  #mc_embed_signup .indicates-required,
+  #mc_embed_signup .mc-field-group label {
+    display: none;
+  }
+
+  #mc_embed_signup .mc-field-group {
+    display: inline-block;
+    margin: 0 0.5rem 0.5rem 0;
+    vertical-align: top;
+  }
+
+  #mc_embed_signup .mc-field-group input.email {
+    background: transparent;
+    border: 1px solid #ff9adf;
+    border-radius: 0;
+    color: #ffffff;
+    font-family: "Cinzel", "Times New Roman", serif;
+    font-size: 0.875rem;
+    padding: 0.5rem 0.75rem;
+    width: 220px;
+    text-transform: lowercase;
+  }
+
+  #mc_embed_signup .mc-field-group input.email::placeholder {
+    color: rgba(255, 154, 223, 0.6);
+  }
+
+  #mc_embed_signup .mc-field-group input.email:focus {
+    outline: none;
+    border-color: #ffe6ff;
+    box-shadow: 0 0 8px rgba(255, 154, 223, 0.4);
+  }
+
+  #mc_embed_signup .optionalParent .clear.foot {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  #mc_embed_signup input.button {
+    background: transparent;
+    border: 1px solid #ff9adf;
+    border-radius: 0;
+    color: #ff9adf;
+    cursor: pointer;
+    font-family: "Cinzel", "Times New Roman", serif;
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem;
+    text-transform: lowercase;
+    transition: opacity 0.3s;
+  }
+
+  #mc_embed_signup input.button:hover {
+    opacity: 0.7;
+  }
+
+  #mc_embed_signup .mailchimp-badge {
+    display: none;
+  }
+
+  #mc_embed_signup #mce-responses {
+    margin-top: 0.5rem;
+  }
+
+  #mc_embed_signup #mce-error-response,
+  #mc_embed_signup #mce-success-response {
+    color: #ff9adf;
+    font-size: 0.875rem;
+    text-transform: lowercase;
+  }
+
   .social-icons {
     display: flex;
     justify-content: center;
@@ -110,7 +202,7 @@
 
   .coming-soon {
     margin: 0;
-    padding: 0 1rem 5rem;
+    padding: 0 1rem 10rem;
     text-align: center;
     font-family: "Cinzel", "Times New Roman", serif;
     font-size: 1.25rem;
