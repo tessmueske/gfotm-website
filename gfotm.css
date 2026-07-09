@@ -109,25 +109,38 @@
   }
 
   #mc_embed_signup .optionalParent .clear.foot {
-    display: inline-block;
+    display: inline-flex !important;
+    align-items: center;
+    grid-template-columns: unset !important;
+    width: auto !important;
     vertical-align: top;
   }
 
-  #mc_embed_signup input.button {
-    background: #ff9adf;
-    border: 1px solid #ff9adf;
-    border-radius: 0;
-    color: #000000;
+  #mc_embed_signup #mc-embedded-subscribe.button {
+    background: #ff9adf !important;
+    background-color: #ff9adf !important;
+    border: 1px solid #ff9adf !important;
+    border-radius: 0 !important;
+    color: #000000 !important;
     cursor: pointer;
+    display: inline-block !important;
     font-family: "Cinzel", "Times New Roman", serif;
-    font-size: 0.875rem;
-    padding: 0.5rem 1rem;
-    text-align: center;
+    font-size: 0.875rem !important;
+    font-weight: 400 !important;
+    height: auto !important;
+    line-height: 1.4 !important;
+    margin: 0 !important;
+    min-width: 7rem;
+    padding: 0.5rem 1.25rem !important;
+    text-align: center !important;
     text-transform: lowercase;
     transition: opacity 0.3s;
+    width: auto !important;
   }
 
-  #mc_embed_signup input.button:hover {
+  #mc_embed_signup #mc-embedded-subscribe.button:hover {
+    background: #ff9adf !important;
+    background-color: #ff9adf !important;
     opacity: 0.7;
   }
 
@@ -210,3 +223,38 @@
     color: #ff9adf;
     text-transform: lowercase;
   }
+
+  /* 1. Center the entire newsletter section */
+.newsletter-signup {
+  width: 100%;
+  max-width: 600px; /* Adjust as needed for desired width */
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; /* Centers inline elements like headings and labels */
+}
+
+/* 2. Style the submit button */
+#mc-embedded-subscribe-form .button {
+  border-radius: 8px; /* Rounded edges - increase number for more roundness */
+  padding: 10px 20px; /* Adds space inside the button */
+  cursor: pointer;
+  
+  /* Ensure text is centered within the button itself */
+  display: inline-block; 
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* Optional: Make the input field look nicer too */
+.mc-field-group input[type="email"] {
+  border-radius: 4px;
+  padding: 8px;
+  width: 70%; /* Adjust width of email box */
+  margin-bottom: 10px;
+}
+
+/* Optional: Center the Mailchimp badge */
+.mailchimp-badge {
+  text-align: center;
+  margin-top: 10px;
+}
