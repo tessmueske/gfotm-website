@@ -198,6 +198,7 @@
     margin-top: 0;
     margin-bottom: 0;
     padding-top: 0;
+    letter-spacing: 0.028em !important
   }
   
 /* Reduce space above hero header - account for fixed menu */
@@ -218,6 +219,7 @@
     background-clip: text;
     color: transparent;
     text-shadow: 0 0 18px rgba(255, 153, 230, 0.7), 0 0 28px rgba(255, 109, 214, 0.9);
+    letter-spacing: 0.028em !important;
   }
 
   .coming-soon {
