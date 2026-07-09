@@ -55,6 +55,9 @@
 
   .newsletter-signup {
     margin-bottom: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   #mc_embed_signup {
@@ -64,6 +67,9 @@
     width: 100%;
     max-width: 420px;
     margin: 0 auto;
+    display: table;
+    margin: 0 auto;
+    float: none !important;
   }
 
   #mc_embed_signup h2 {
@@ -235,7 +241,7 @@
 
 /* 2. Style the submit button */
 #mc-embedded-subscribe-form .button {
-  border-radius: 8px; /* Rounded edges - increase number for more roundness */
+  border-radius: 0px !important; /* Rounded edges - increase number for more roundness */
   padding: 10px 20px; /* Adds space inside the button */
   cursor: pointer;
   
@@ -257,4 +263,43 @@
 .mailchimp-badge {
   text-align: center;
   margin-top: 10px;
+}
+
+/* Force centering of Mailchimp form content */
+#mc_embed_signup {
+  text-align: center !important;
+  float: none !important;
+}
+
+#mc_embed_signup form {
+  text-align: center !important;
+  justify-content: center !important;
+}
+
+#mc_embed_signup .mc-field-group {
+  float: none !important;
+  display: inline-flex !important;
+  justify-content: center !important;
+  width: auto !important;
+  margin: 0 0.5rem 0.5rem 0.5rem !important; /* Equal margins for centering */
+}
+
+#mc_embed_signup .mc-field-group input {
+  display: block !important;
+  margin: 0 auto !important;
+}
+
+#mc_embed_signup .clear {
+  float: none !important;
+  clear: both !important;
+  display: block !important;
+  text-align: center !important;
+  margin-top: 0.5rem !important;
+}
+
+/* Center the submit button specifically */
+#mc_embed_signup #mc-embedded-subscribe.button {
+  border-radius: 8px !important;
+  display: block !important;
+  margin: 0 auto !important;
 }
