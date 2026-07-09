@@ -207,20 +207,16 @@
     padding: 0 1rem 1.25rem;
   }
   
-  /* Sparkly pink text on black background */
-  .hero h1 {
-    font-family: "Aporrheton", sans-serif !important;
-    text-align: center;
-  margin-top: -2.5rem; /* pull text up closer to menu */
-    padding-top: 0;
-    font-size: clamp(12rem, 26vw, 28rem);
-    background: linear-gradient(120deg, #ff9adf, #ff4fbf, #ffe6ff);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    text-shadow: 0 0 18px rgba(255, 153, 230, 0.7), 0 0 28px rgba(255, 109, 214, 0.9);
-    letter-spacing: 0.028em !important;
-  }
+/* Sparkly pink text on black background */
+.hero h1 {
+  font-family: "Aporrheton", sans-serif !important;
+  text-align: center;
+  margin-top: -2.5rem;
+  padding-top: 0;
+  font-size: clamp(12rem, 26vw, 28rem);
+  color: #ff9adf;
+  letter-spacing: 0.028em !important;
+}
 
   .coming-soon {
     margin: 0;
@@ -304,4 +300,96 @@
   border-radius: 8px !important;
   display: block !important;
   margin: 0 auto !important;
+}
+
+/* ===== TOUR PAGE STYLES ===== */
+.page-container {
+  padding: 6rem 1rem 8rem;
+  min-height: 100vh;
+  background: #000000;
+  color: #ffffff;
+}
+
+.section-title {
+  font-family: "Cinzel", "Times New Roman", serif;
+  font-size: 13rem;
+  color: #ff9adf;
+  text-align: center;
+  text-transform: lowercase;
+  margin-bottom: 3rem;
+}
+
+.show-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.show-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  border: 1px solid #ff9adf;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.show-item:hover {
+  background: rgba(255, 154, 223, 0.1);
+  border-color: #ffe6ff;
+}
+
+.show-date {
+  font-family: "Cinzel", "Times New Roman", serif;
+  font-size: 1.1rem;
+  color: #ffffff;
+  flex: 1;
+}
+
+.show-venue {
+  font-family: "Cinzel", "Times New Roman", serif;
+  font-size: 1.1rem;
+  color: #ff9adf;
+  flex: 2;
+  text-align: center;
+}
+
+.show-location {
+  font-family: "Cinzel", "Times New Roman", serif;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+  flex: 1;
+  text-align: right;
+}
+
+.back-link {
+  display: block;
+  text-align: center;
+  margin-top: 3rem;
+  color: #ff9adf;
+  font-family: "Cinzel", "Times New Roman", serif;
+  text-decoration: none;
+  text-transform: lowercase;
+}
+
+.back-link:hover {
+  opacity: 0.7;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .show-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+  
+  .show-date,
+  .show-venue,
+  .show-location {
+    text-align: center;
+  }
 }
