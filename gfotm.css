@@ -44,14 +44,12 @@
   }
 
   .site-footer {
-    position: fixed;
-    bottom: 0;
     left: 0;
     right: 0;
     padding: 1.25rem;
     text-align: center;
     z-index: 1000;
-  }
+}
 
   .newsletter-signup {
     margin-bottom: 1.25rem;
@@ -304,7 +302,7 @@
 
 /* ===== TOUR PAGE STYLES ===== */
 .page-container {
-  padding: 6rem 1rem 8rem;
+  padding: 3rem 1rem 4rem;  /* was 6rem 1rem 8rem */
   min-height: 100vh;
   background: #000000;
   color: #ffffff;
@@ -312,7 +310,7 @@
 
 .section-title {
   font-family: "Cinzel", "Times New Roman", serif;
-  font-size: 13rem;
+  font-size:  clamp(3rem, 8vw, 6rem); /* was 13rem */
   color: #ff9adf;
   text-align: center;
   text-transform: lowercase;
