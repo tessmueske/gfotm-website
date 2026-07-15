@@ -226,6 +226,65 @@
     text-transform: lowercase;
   }
 
+
+  /* ===== PRESS PAGE STYLES ===== */
+.press-page {
+  padding: 2rem 1rem 4rem;
+  max-width: 800px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.press-item {
+  margin-bottom: 2.5rem;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 154, 223, 0.3);
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+}
+
+.press-item:hover {
+  border-color: #ff9adf;
+}
+
+.press-source {
+  display: inline-block;
+  font-family: "Cinzel", "Times New Roman", serif;
+  font-size: 1.1rem;
+  color: #ff9adf;
+  text-decoration: none;
+  text-transform: lowercase;
+  margin-bottom: 1rem;
+  transition: opacity 0.3s;
+}
+
+.press-source:hover {
+  opacity: 0.7;
+  text-decoration: underline;
+}
+
+.press-quote {
+  margin: 0;
+  padding-left: 1.25rem;
+  border-left: 2px solid #ff9adf;
+  font-family: "Cinzel", "Times New Roman", serif;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.85);
+  font-style: italic;
+}
+
+@media (max-width: 600px) {
+  .press-item {
+    padding: 1.25rem;
+  }
+
+  .press-quote {
+    font-size: 0.875rem;
+    padding-left: 1rem;
+  }
+}
+
   /* 1. Center the entire newsletter section */
 .newsletter-signup {
   width: 100%;
