@@ -369,7 +369,7 @@
 
 .section-title {
   font-family: "Cinzel", "Times New Roman", serif;
-  font-size:  clamp(3rem, 8vw, 6rem); /* was 13rem */
+  font-size: 13rem;
   color: #ff9adf;
   text-align: center;
   text-transform: lowercase;
