@@ -393,6 +393,15 @@
   margin: 0 auto;
 }
 
+.show-link {
+  display: flex;
+  width: 100%;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+
 .show-item {
   display: flex;
   justify-content: space-between;
