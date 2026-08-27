@@ -575,12 +575,6 @@
 }
 
 /* ===== MUSIC ICONS ===== */
-.music {
-  display: flex;
-  justify-content: center;
-  gap: 1.75rem;
-  margin-top: 1.5rem;
-}
 
 .music a {
   color: #ff9adf;
@@ -606,12 +600,25 @@
 /* ===== FOOTER LAYOUT ===== */
 .site-footer {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 1.25rem 2rem;
+  width: 100%;
+  background: #000000;
+}
+
+.newsletter-signup {
+  margin-bottom: 2.5rem;
+  width: 100%;
+  text-align: center;
+}
+
+.footer-icons-container {
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.25rem;
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto;
 }
 
 .social-icons {
@@ -646,6 +653,19 @@
   width: 2rem;
   height: 2rem;
   fill: #ff9adf !important;
+}
+
+/* Mobile: Stack everything */
+@media (max-width: 600px) {
+  .footer-icons-container {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .social-icons,
+  .music {
+    justify-content: center;
+  }
 }
 
 /* Newsletter stays above footer icons, centered */
