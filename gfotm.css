@@ -482,18 +482,18 @@
 }
 
 .hero-image img {
+  display: block;
   max-width: 500px; 
-  max-height: 60vh;
+  max-height: 60vh; 
   width: auto;
   height: auto;
-  object-fit: contain;
   border-radius: 4px;
 }
 
-/* on smaller screens, make it even smaller */
 @media (max-width: 600px) {
   .hero-image img {
-    max-width: 90%;
+    max-width: 90%; 
     max-height: 50vh;
   }
 }
+
