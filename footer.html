@@ -69,18 +69,3 @@
       </a>
     </div>
   </footer>
-  
-  <script>
-  // Inject footer into any page that has a footer-placeholder
-  document.addEventListener('DOMContentLoaded', () => {
-    const footerPlaceholder = document.getElementById('footer-placeholder');
-    if (footerPlaceholder) {
-      fetch('footer.html')
-        .then(response => response.text())
-        .then(data => {
-          footerPlaceholder.innerHTML = data;
-        })
-        .catch(err => console.error('Failed to load footer:', err));
-    }
-  });
-  </script>
