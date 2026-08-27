@@ -226,18 +226,16 @@
 }
 
 .page-text {
-  max-width: 680px;       /* narrows the text column */
-  margin: 0 auto 1.5rem;  /* centers it + space between paragraphs */
-  padding: 0;             /* drop the old 10rem bottom pad */
+  max-width: 680px;    
+  margin: 0 auto 1.5rem;  
+  padding: 0;         
   text-align: center;
   font-family: "Cinzel", "Times New Roman", serif;
   font-size: 1rem;
-  line-height: 1.6;        /* breathing room between lines */
+  line-height: 1.6;   
   color: #ff9adf;
   text-transform: lowercase;
 }
-
-
 
   /* ===== PRESS PAGE STYLES ===== */
 .press-page {
@@ -297,7 +295,7 @@
   }
 }
 
-  /* 1. Center the entire newsletter section */
+  /* Center the entire newsletter section */
 .newsletter-signup {
   width: 100%;
   max-width: 600px; /* Adjust as needed for desired width */
@@ -306,19 +304,16 @@
   text-align: center; /* Centers inline elements like headings and labels */
 }
 
-/* 2. Style the submit button */
 #mc-embedded-subscribe-form .button {
   border-radius: 0px !important; /* Rounded edges - increase number for more roundness */
   padding: 10px 20px; /* Adds space inside the button */
   cursor: pointer;
   
-  /* Ensure text is centered within the button itself */
   display: inline-block; 
   text-align: center;
   vertical-align: middle;
 }
 
-/* Optional: Make the input field look nicer too */
 .mc-field-group input[type="email"] {
   border-radius: 4px;
   padding: 8px;
@@ -326,13 +321,11 @@
   margin-bottom: 10px;
 }
 
-/* Optional: Center the Mailchimp badge */
 .mailchimp-badge {
   text-align: center;
   margin-top: 10px;
 }
 
-/* Force centering of Mailchimp form content */
 #mc_embed_signup {
   text-align: center !important;
   float: none !important;
@@ -348,7 +341,7 @@
   display: inline-flex !important;
   justify-content: center !important;
   width: auto !important;
-  margin: 0 0.5rem 0.5rem 0.5rem !important; /* Equal margins for centering */
+  margin: 0 0.5rem 0.5rem 0.5rem !important;
 }
 
 #mc_embed_signup .mc-field-group input {
@@ -364,7 +357,6 @@
   margin-top: 0.5rem !important;
 }
 
-/* Center the submit button specifically */
 #mc_embed_signup #mc-embedded-subscribe.button {
   border-radius: 8px !important;
   display: block !important;
@@ -403,7 +395,6 @@
   color: inherit;
   cursor: pointer;
 }
-
 
 .show-item {
   display: flex;
@@ -618,4 +609,68 @@
 
 .music a:hover svg {
   opacity: 0.7;
+}
+
+/* ===== FOOTER LAYOUT ===== */
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1.75rem;
+}
+
+.music {
+  display: flex;
+  gap: 1.75rem;
+}
+
+.social-icons a,
+.music a {
+  color: #ff9adf;
+  font-size: 2rem;
+  transition: opacity 0.3s;
+}
+
+.social-icons a:hover,
+.music a:hover {
+  opacity: 0.7;
+}
+
+.social-icons svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: #ff9adf !important;
+}
+
+.music svg {
+  width: 2rem;
+  height: 2rem;
+  fill: #ff9adf !important;
+}
+
+/* Newsletter stays above footer icons, centered */
+.newsletter-signup {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 600px) {
+  .site-footer {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  .social-icons,
+  .music {
+    justify-content: center;
+  }
 }
