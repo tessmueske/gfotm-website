@@ -601,7 +601,7 @@
 
 .music a {
   color: #ff9adf;
-  font-size: 2rem; 
+  font-size: 2rem;
   transition: opacity 0.3s;
 }
 
@@ -612,5 +612,10 @@
 .music svg {
   width: 2rem;
   height: 2rem;
-  fill: currentColor;
+  fill: #ff9adf !important;
+  transition: opacity 0.3s;
+}
+
+.music a:hover svg {
+  opacity: 0.7;
 }
