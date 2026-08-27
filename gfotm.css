@@ -231,7 +231,7 @@
   padding: 0;             /* drop the old 10rem bottom pad */
   text-align: center;
   font-family: "Cinzel", "Times New Roman", serif;
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 1.6;        /* breathing room between lines */
   color: #ff9adf;
   text-transform: lowercase;
