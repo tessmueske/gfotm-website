@@ -225,15 +225,18 @@
   letter-spacing: 0.028em !important;
 }
 
-  .coming-soon {
-    margin: 0;
-    padding: 0 1rem 10rem;
-    text-align: center;
-    font-family: "Cinzel", "Times New Roman", serif;
-    font-size: 1.5rem;
-    color: #ff9adf;
-    text-transform: lowercase;
-  }
+.page-text {
+  max-width: 680px;       /* narrows the text column */
+  margin: 0 auto 1.5rem;  /* centers it + space between paragraphs */
+  padding: 0;             /* drop the old 10rem bottom pad */
+  text-align: center;
+  font-family: "Cinzel", "Times New Roman", serif;
+  font-size: 1.5rem;
+  line-height: 1.6;        /* breathing room between lines */
+  color: #ff9adf;
+  text-transform: lowercase;
+}
+
 
 
   /* ===== PRESS PAGE STYLES ===== */
