@@ -522,3 +522,34 @@
   height: 100%;
   border-radius: 4px;
 }
+
+/* ===== GALLERY STYLES ===== */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 154, 223, 0.3);
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.gallery img:hover {
+  border-color: #ff9adf;
+  transform: scale(1.02);
+}
+
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
